@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json.schemastore.org/nest-cli",
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "apps/vane-transfer-system/src",
+  "compilerOptions": {
+    "deleteOutDir": true
+  },
+  "monorepo": true,
+  "root": "apps/vane-transfer",
+  "projects": {
+    "construction-api": {
+      "type": "application",
+      "root": "apps/construction-api",
+      "entryFile": "main",
+      "sourceRoot": "apps/construction-api/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/construction-api/tsconfig.app.json"
+      }
+    }
+  }
+}
